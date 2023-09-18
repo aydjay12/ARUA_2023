@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/ARUA_2023/static/css/main.b4ff04c2.css",
+    "main.js": "/ARUA_2023/static/js/main.a61b3052.js",
+    "static/js/787.fade2e9e.chunk.js": "/ARUA_2023/static/js/787.fade2e9e.chunk.js",
+    "static/media/pic1.jpg": "/ARUA_2023/static/media/pic1.d8e7e9ed9b9857687a42.jpg",
+    "static/media/Photo_6.jpg": "/ARUA_2023/static/media/Photo_6.80cf47ebcefe05a7a549.jpg",
+    "static/media/Photo_4.jpg": "/ARUA_2023/static/media/Photo_4.72b512915a609bb9d1a4.jpg",
+    "static/media/Photo_3.jpg": "/ARUA_2023/static/media/Photo_3.48e1b6e4618271f8a722.jpg",
+    "static/media/vegan.png": "/ARUA_2023/static/media/vegan.0c40d192c9750920f96f.png",
+    "static/media/pic3.jpg": "/ARUA_2023/static/media/pic3.1041b61f81333d640760.jpg",
+    "static/media/pic2.jpg": "/ARUA_2023/static/media/pic2.9c68d0cb0e80125a0524.jpg",
+    "static/media/pic6.jpg": "/ARUA_2023/static/media/pic6.b17c89c6637d4e2b7b23.jpg",
+    "static/media/hero.png": "/ARUA_2023/static/media/hero.bd3a0969f98126e87aad.png",
+    "static/media/Photo_1.jpg": "/ARUA_2023/static/media/Photo_1.76cad13d32d714a4d5ab.jpg",
+    "static/media/KumbhSans-Regular.ttf": "/ARUA_2023/static/media/KumbhSans-Regular.8b92f6bc143fd8e0909f.ttf",
+    "static/media/margherita.png": "/ARUA_2023/static/media/margherita.2fd7772dc411a2436332.png",
+    "static/media/unilag_icon.png": "/ARUA_2023/static/media/unilag_icon.8d08ea307e818bcc901b.png",
+    "static/media/pineapple.png": "/ARUA_2023/static/media/pineapple.4af05d7fb8b55afb892b.png",
+    "static/media/support2.png": "/ARUA_2023/static/media/support2.60143a5c6a8ed76ab4ee.png",
+    "static/media/google.png": "/ARUA_2023/static/media/google.180de1c8312d200208c8.png",
+    "static/media/amazon.png": "/ARUA_2023/static/media/amazon.fb03b0841072fd6d4cef.png",
+    "static/media/logo.png": "/ARUA_2023/static/media/logo.c0aa4ee15db282ef4cac.png",
+    "static/media/walmart.png": "/ARUA_2023/static/media/walmart.e8cb7d3306f2c7731eb0.png",
+    "static/media/atlassian.png": "/ARUA_2023/static/media/atlassian.2af69a3cb255736fe8be.png",
+    "static/media/Youtube_Icon.png": "/ARUA_2023/static/media/Youtube_Icon.7cedfa3a8bc7d3993313.png",
+    "static/media/canon.png": "/ARUA_2023/static/media/canon.f6045027a7291399caae.png",
+    "index.html": "/ARUA_2023/index.html",
+    "main.b4ff04c2.css.map": "/ARUA_2023/static/css/main.b4ff04c2.css.map",
+    "main.a61b3052.js.map": "/ARUA_2023/static/js/main.a61b3052.js.map",
+    "787.fade2e9e.chunk.js.map": "/ARUA_2023/static/js/787.fade2e9e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4ff04c2.css",
+    "static/js/main.a61b3052.js"
+  ]
+}
