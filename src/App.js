@@ -38,7 +38,7 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <Router>
+      <Router basename="/ARUA_2023">
         <Navbar></Navbar>
         <AnimatedRoutes></AnimatedRoutes>
         <Footer></Footer>
