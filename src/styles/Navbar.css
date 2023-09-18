@@ -1,0 +1,147 @@
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar .leftSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 150px;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo1 {
+  width: 4em;
+  margin-right: 0.5em;
+}
+
+.logo2 {
+  width: 150px;
+}
+
+.navbar .rightSide {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 20px;
+  position: relative;
+}
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  transition: width 0.4s;
+  margin-bottom: -0.3em;
+}
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar .rightSide svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: flex;
+  margin-left: 15px;
+  justify-content: space-between;
+  min-width: 20em;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  margin: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar .rightSide a {
+    margin: 0.5em;
+  }
+  .navbar .leftSide {
+    padding-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+
+  #close {
+    padding-left: 0.8em;
+  }
+
+  #right {
+    padding-right: 0.8em;
+  }
+
+  .logo1 {
+    width: 2.5em;
+    margin-right: 0.2em;
+  }
+
+  .logo2 {
+    width: 90px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+}

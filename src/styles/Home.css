@@ -1,0 +1,183 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.topSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+.topSide h1 {
+  font-size: 3em;
+  text-align: center;
+  align-self: center;
+  width: 75%;
+}
+.topSide p {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  align-self: center;
+  width: 55%;
+}
+.hero {
+  width: 100%;
+  border-radius: 1em;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+.leaders {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 83%;
+  margin-bottom: 4em;
+}
+.leaders p {
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 100%;
+}
+.imagewrapper {
+  margin: 0 2em;
+  width: 70%;
+}
+.imagewrapper img {
+  width: 100%;
+}
+.bottomSide {
+  display: flex;
+  width: 80%;
+  border: 2px solid silver;
+  border-radius: 0.8em;
+  justify-content: space-around;
+  padding: 1em 0 1em 0;
+  margin: 3em 0 3em 0;
+}
+.bottomSide div:nth-of-type(1) {
+  width: 40%;
+}
+.bottomSide div:nth-of-type(1) p {
+  font-size: 0.9em;
+  padding-bottom: 1em;
+}
+.bottomSide div:nth-of-type(2) {
+  width: 20%;
+}
+.bottomSide div:nth-of-type(3) {
+  width: 20%;
+}
+.bottomSide div div {
+  display: flex;
+}
+.item {
+  min-height: 7em;
+  min-width: 7em;
+  padding: 40px;
+}
+.item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2em;
+  pointer-events: none;
+}
+.inner-carousel {
+  display: flex;
+}
+.carousel {
+  width: 120vh;
+  overflow: hidden;
+}
+.summary {
+  width: 82%;
+}
+.summary h1 {
+  text-align: center;
+}
+.summary section {
+  display: flex;
+  gap: 2em;
+  line-height: 1.5em;
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  text-align: justify;
+}
+.summary section div {
+  width: 50%;
+}
+.summary hr {
+  width: 0.2em;
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .topSide {
+    width: 90%;
+  }
+  .topSide h1 {
+    width: 100%;
+  }
+  .topSide p {
+    width: 80%;
+  }
+  #time {
+    gap: 1em;
+  }
+  .imagewrapper {
+    margin: 0 1em;
+  }
+  .leaders p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .summary section {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .summary section div {
+    width: 100%;
+  }
+  .summary hr {
+    width: 100%;
+    height: 0.2em;
+    border-radius: 2em;
+  }
+  #time {
+    display: none;
+    flex-direction: column;
+    gap: 3em;
+  }
+  .topSide h1 {
+    font-size: 2.4em;
+  }
+  .topSide p {
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .topSide {
+    width: 95%;
+  }
+  .summary {
+    width: 95%;
+  }
+  .leaders {
+    flex-direction: column;
+  }
+  .leaders p {
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    margin-top: -20%;
+  }
+  .imagewrapper {
+    margin: 0 0.85em;
+  }
+}

@@ -1,0 +1,782 @@
+:root {
+  --primary--color: rgb(214, 180, 26);
+  --primary--text--color: rgb(67, 55, 1);
+}
+
+.head {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header {
+  font-size: 1em;
+  letter-spacing: 0.5em;
+  margin: auto;
+  margin-bottom: 1em;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header button {
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 1.2em 0 1.2em 0;
+  color: black;
+  font-weight: 700;
+  background: white;
+  width: 100%;
+  cursor: pointer;
+}
+.header button:hover {
+  background: var(--primary--color);
+  border-color: white;
+  transition: 0.3s;
+  color: white;
+}
+.header img {
+  width: 20%;
+}
+.logo-img {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+#unilag-logo {
+  width: 20%;
+}
+#arua-logo {
+  width: 100%;
+}
+
+.main_container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.video,
+.previous_videos,
+.articles {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.comments {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.photo_gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.previous_videos,
+.articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+.video_head {
+  font-size: 1em;
+  letter-spacing: 1em;
+  margin: auto;
+  margin-bottom: 0.5em;
+}
+
+.video_content {
+  display: flex;
+}
+
+.video_content .content h2 {
+  font-size: 1em;
+}
+
+.video_content .content p {
+  font-size: 0.9em;
+}
+
+.content,
+.video_box {
+  flex-basis: 200px;
+}
+
+.video_box {
+  margin-right: 0.5em;
+}
+
+.video_box img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.video iframe {
+  width: 100%;
+  border-radius: 0.5em;
+  height: 100%;
+  margin-bottom: 0.5em;
+}
+
+.article_content img {
+  width: 100%;
+  border-top-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+}
+
+.img_box {
+  margin-right: 1em;
+  width: 100%;
+}
+
+.article_content section {
+  flex-basis: 175px;
+}
+
+.previous_videos,
+.articles {
+  margin-top: 1.5em;
+}
+
+.article_head {
+  font-size: 1em;
+  letter-spacing: 1em;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.comment_head {
+  font-size: 1em;
+  letter-spacing: 1em;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 1em;
+}
+
+.gallery_head {
+  font-size: 1em;
+  letter-spacing: 1em;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.article_content {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.article_content h2 {
+  font-size: 1em;
+}
+
+.article_content p {
+  font-size: 0.9em;
+}
+
+/* .previous_videos .video_content
+        {
+            width: 370px;
+            margin: auto;
+            margin-bottom: 1.5em;
+        }
+
+        .previous_videos .video_content video
+        {
+            width: 100%;
+        } */
+
+.article_content .content {
+  margin-top: 0.5em;
+}
+
+.article_content .content h2,
+.article_content .content p {
+  margin-bottom: 0.2em;
+}
+
+.content h2:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.video_content {
+  cursor: pointer;
+}
+
+.video_box {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 3.5em;
+  top: 1.2em;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  place-items: center;
+}
+
+.photos img {
+  width: 95%;
+}
+
+.video_head {
+  margin-top: 3em;
+}
+
+#time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#time .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle1 {
+  --clr: silver;
+}
+.circle2 {
+  --clr: #ff2972;
+}
+.circle3 {
+  --clr: #fee800;
+}
+.circle4 {
+  --clr: #04fc43;
+}
+#time .circle svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+#time .circle svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 8;
+  stroke: #282828;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+#time .circle svg circle:nth-child(2) {
+  stroke: var(--clr);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+#time div {
+  position: absolute;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  font-size: 1.5em;
+}
+#time div span {
+  position: absolute;
+  transform: translateX(-50%) translateY(-10px);
+  font-size: 0.35em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#time .dots {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1000;
+}
+#time .dots::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+.newEvent {
+  font-size: 3em;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  line-height: 1em;
+  display: none;
+  border: 2px solid black;
+  padding: 1em;
+  margin: 0;
+}
+
+.newEvent span {
+  font-size: 0.5em;
+  font-weight: 300;
+}
+.showcase {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  height: 40vh;
+}
+
+.sub_topic p {
+  font-size: 1.5em;
+  /* text-align: center; */
+  font-weight: bold;
+  color: var(--primary--text--color);
+}
+
+.topic p:nth-of-type(1) {
+  margin: 0.7em 0 0.7em 0;
+  font-weight: bold;
+  color: var(--primary--text--color);
+}
+
+.topic p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 2.7em;
+  letter-spacing: 1px;
+  color: var(--primary--color);
+}
+
+.showcase .date_time {
+  margin-top: 4em;
+  /* backdrop-filter: blur(50px); */
+  padding: 2em;
+  position: absolute;
+  bottom: 240px;
+  right: 230px;
+  /* border: 2px solid var(--primary--text--color); */
+  border-radius: 3em 0 3em 0;
+}
+
+.showcase .date_time section:nth-of-type(2) p {
+  margin: 1em 0em 1em 0em;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--primary--text--color);
+}
+
+.showcase .date_time section:nth-of-type(2) p:nth-of-type(1) {
+  color: black;
+}
+
+.showcase .date_time i {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+.showcase .date_time section:nth-of-type(2) {
+  border-top: 1px solid var(--primary--color);
+}
+
+.showcase .date_time section:nth-of-type(1) {
+  margin-bottom: 1em;
+}
+
+.showcase .date_time section:nth-of-type(1) p:nth-of-type(1) {
+  font-size: 0.9em;
+  margin-bottom: 0.3em;
+  color: var(--primary--text--color);
+}
+
+.showcase .date_time section:nth-of-type(1) p:nth-of-type(2) {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: var(--primary--text--color);
+}
+
+.css1 {
+  font-weight: 700;
+  color: black;
+}
+#css2 {
+  width: 30%;
+  top: 20%;
+  left: 35%;
+}
+#css3 {
+  width: 30%;
+  top: 20%;
+  left: 35%;
+}
+#css4 {
+  width: 30%;
+  top: 20%;
+  left: 35%;
+}
+#css5 {
+  width: 30%;
+  top: 20%;
+  left: 35%;
+}
+#css6 {
+  text-decoration: none;
+  color: black;
+}
+#css7 {
+  text-decoration: none;
+  color: black;
+}
+#css8 {
+  text-decoration: none;
+  color: black;
+}
+#css9 {
+  text-decoration: none;
+  color: black;
+}
+.css10 {
+  background: rgb(231, 239, 247);
+}
+.livechat {
+  height: 81%;
+  width: 30%;
+  background: rgb(235, 235, 235);
+  border-radius: 0.5em;
+}
+
+.livetxt {
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .video {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    flex-direction: column;
+  }
+  .livechat {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .previous_videos {
+    grid-column: 1 / 3;
+  }
+
+  .head .articles {
+    grid-column: 1 / 3;
+  }
+
+  .head {
+    grid-column: 1 / 3;
+  }
+
+  .head .photo_gallery {
+    grid-column: 1 / 3;
+  }
+
+  .head .comments {
+    grid-column: 1 / 3;
+  }
+
+  .previous_videos,
+  .articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .video_content .content h2 {
+    font-size: 0.5em;
+  }
+
+  .video_content .content p {
+    font-size: 0.4em;
+  }
+
+  .header {
+    grid-column: 1 / 3;
+  }
+
+  .article_head {
+    grid-column: 1 / 3;
+  }
+
+  .video_head {
+    margin-top: 0.5em;
+    grid-column: 1 / 3;
+  }
+
+  .article_content h2 {
+    font-size: 0.5em;
+  }
+
+  .article_content p {
+    font-size: 0.4em;
+  }
+
+  .video_content,
+  .article_content {
+    flex-direction: column;
+  }
+
+  .content,
+  .video_box {
+    flex-basis: 0px;
+  }
+
+  .article_content section {
+    flex-basis: 0px;
+  }
+
+  .video iframe {
+    height: 50vh;
+  }
+
+  .article_content h2 {
+    font-size: 1em;
+  }
+
+  .photo_gallery {
+    margin-bottom: 5em;
+  }
+
+  .gallery_head {
+    margin-top: 3em;
+  }
+
+  .article_content p {
+    font-size: 0.9em;
+  }
+
+  .video_content .content h2 {
+    font-size: 1em;
+  }
+
+  .video_content .content p {
+    font-size: 0.9em;
+  }
+
+  #unilag-logo {
+    display: none;
+  }
+  .date_time {
+    display: none;
+  }
+  .theme {
+    font-size: 1.2em;
+  }
+  #theme-p {
+    font-size: 1.8em;
+  }
+  .sub_topic p {
+    font-size: 1.5em;
+  }
+  .showcase {
+    height: auto;
+  }
+}
+/* @media (min-width: 506px) {
+    .showcase {
+      height: 35vh;
+    }
+  } */
+
+@media (min-width: 768px) {
+  .video {
+    flex-direction: row;
+    gap: 1em;
+  }
+  .live {
+    width: 65%;
+  }
+  .livechat {
+    width: 35%;
+    height: 81%;
+  }
+  .video iframe {
+    height: 60vh;
+  }
+  .previous_videos,
+  .articles {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .header {
+    font-size: 1.5em;
+  }
+
+  .article_head {
+    grid-column: 1 / 5;
+  }
+
+  .video_head {
+    grid-column: 1 / 5;
+  }
+
+  .article_content h2 {
+    font-size: 1em;
+  }
+
+  .article_content p {
+    font-size: 0.9em;
+  }
+
+  .video_content .content h2 {
+    font-size: 1em;
+  }
+
+  .video_content .content p {
+    font-size: 0.9em;
+  }
+
+  .photos {
+    grid-gap: 2em;
+  }
+  .theme {
+    font-size: 1.2em;
+  }
+  #theme-p {
+    font-size: 2.2em;
+  }
+  .sub_topic p {
+    font-size: 1.6em;
+    margin-top: -1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    gap: 1em;
+  }
+  .live {
+    width: 70%;
+  }
+  .livechat {
+    width: 30%;
+    height: 81%;
+  }
+  .main_container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .head {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .header {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    font-size: 1.7em;
+    letter-spacing: 1.2em;
+  }
+
+  .head {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .head .comments {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .live {
+    width: 70%;
+  }
+
+  .previous_videos,
+  .articles {
+    column-gap: 2em;
+    margin: 0;
+  }
+
+  .previous_videos {
+    margin-top: 1em;
+  }
+
+  .video {
+    margin-top: 2em;
+    display: flex;
+    gap: 1em;
+  }
+
+  .livechat {
+    height: 81%;
+    width: 30%;
+    background: rgb(235, 235, 235);
+    border-radius: 0.5em;
+  }
+
+  .livetxt {
+    text-align: center;
+  }
+
+  .video_head {
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+  }
+
+  .article_head {
+    margin-top: 5em;
+    margin-bottom: 2em;
+  }
+  .gallery_head {
+    margin-bottom: 3em;
+  }
+  .article_content {
+    margin-bottom: 1rem;
+  }
+
+  .video iframe {
+    height: 70vh;
+  }
+
+  .photo_gallery {
+    margin-bottom: 5em;
+  }
+  .logo-img {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  #unilag-logo {
+    display: flex;
+    width: 30%;
+    margin-right: 0.5em;
+  }
+  #arua-logo {
+    width: 50%;
+  }
+  .date_time {
+    display: flex;
+  }
+  .theme {
+    font-size: 1.4em;
+  }
+  #theme-p {
+    font-size: 2.65em;
+  }
+  .sub_topic p {
+    font-size: 1.8em;
+    margin: 0;
+  }
+  .showcase {
+    height: 35vh;
+  }
+}

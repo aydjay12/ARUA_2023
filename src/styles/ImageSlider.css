@@ -1,0 +1,27 @@
+.control-btn button {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.control-btn .next {
+  position: "absolute";
+  top: "50%";
+  transform: "translate(0, -50%)";
+  left: "32px";
+  font-size: "45px";
+  color: black;
+  z-index: 1;
+  cursor: "pointer";
+  height: "100px";
+}
+
+.control-btn .prev {
+  position: absolute;
+  /* top: 50%; */
+  left: 0;
+  z-index: 99;
+}
