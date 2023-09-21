@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import ExpandLessIcon from "./assets/expandless.png";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
-import NewContextProvider from "./Context/NewContext";
+
 
 const App = () => {
   const [ShowButton, setShowButton] = useState(false);
@@ -38,20 +38,18 @@ const App = () => {
     };
   }, []);
   return (
-    <NewContextProvider>
-      <div className="App">
-        <Router>
-          <Navbar></Navbar>
-          <AnimatedRoutes></AnimatedRoutes>
-          <Footer></Footer>
-        </Router>
-        {ShowButton && (
-          <button className="back-to-top-button" onClick={scrollToTop}>
-            <img src={ExpandLessIcon} alt="Back to Top" width="40" height="40" />
-          </button>
-        )}
-      </div>
-    </NewContextProvider>
+    <div className="App">
+      <Router>
+        <Navbar></Navbar>
+        <AnimatedRoutes></AnimatedRoutes>
+        <Footer></Footer>
+      </Router>
+      {showButton && (
+        <button className="back-to-top-button" onClick={scrollToTop}>
+          <img src={ExpandLessIcon} alt="Back to Top" width="40" height="40" />
+        </button>
+      )}
+    </div>
   );
 };
 
