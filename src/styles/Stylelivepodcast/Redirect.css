@@ -1,0 +1,32 @@
+
+
+.Container
+{
+    height: 300px;
+}
+
+.Slider
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Slider section
+{
+    position: relative;
+    width: 100%;
+    margin: 0em 1em 0em 1em;
+}
+
+.Slider section img
+{
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in;
+}
+
+.Slider section img:hover{
+    transform: translateY(-20px);
+}

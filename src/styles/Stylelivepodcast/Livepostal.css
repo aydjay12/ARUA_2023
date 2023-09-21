@@ -1,0 +1,61 @@
+.livepostalsession
+{
+    width: 78%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel_container
+{
+    width: 65%;
+    position: relative;
+}
+
+.livechat
+{
+    width: 35%;
+}
+
+.carousel
+{
+    width: 100%;
+}
+
+
+.carousel .slider
+{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    border: 1px solid #ccc;
+    transform: translateX(0);
+    transform: transform 1s ease-in;    
+}
+
+.carousel .slider img
+{
+    width: 100%;
+}
+
+.arrow
+{
+    position: absolute;
+    cursor: pointer;
+}
+
+.arrow.prev
+{
+    bottom: -30px;
+    left: 10px;
+}
+
+.arrow.next
+{
+    bottom: -30px;
+    right: 10px;
+}
+
+

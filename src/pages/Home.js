@@ -8,12 +8,7 @@ import Walmart from "../assets/walmart.png";
 import Support1 from "../assets/support1.png";
 import Support2 from "../assets/support2.png";
 import "react-slideshow-image/dist/styles.css";
-// import ImageSlider from "../helpers/ImageSlider";
 import { motion } from "framer-motion";
-// import { useRef, useEffect, useState } from "react";
-// import { Fade, Slide } from "react-slideshow-image";
-// import Star from "../assets/star.png";
-// import { Link } from "react-router-dom";
 import { MenuList } from "../helpers/MenuList";
 import { MenuList2 } from "../helpers/MenuList";
 import { MenuList3 } from "../helpers/MenuList";
@@ -21,11 +16,9 @@ import MenuItem from "../components/MenuItem";
 import Marquee from "react-fast-marquee";
 import "../styles/Livestream.css";
 import "../styles/Home.css";
-// import images from "../components/images";
 import { Helmet } from "react-helmet";
 import CountdownTimer from "./Countdown";
-// import { containerClasses } from "@mui/material";
-// import { Slider } from "@mui/material";
+
 
 <Helmet>
   <script
@@ -43,48 +36,34 @@ import CountdownTimer from "./Countdown";
   <script src="../helpers/Javascript.js"></script>
 </Helmet>;
 
-// const slides = [
-//   {
-//     url: "http://localhost:3000/google.png",
-//   },
-//   {
-//     url: "http://localhost:3000/atlassian.png",
-//   },
-//   {
-//     url: "http://localhost:3000/amazon.png",
-//   },
-//   {
-//     url: "http://localhost:3000/canon.png",
-//   },
-//   {
-//     url: "http://localhost:3000/walmart.png",
-//   },
-// ];
-// const divStyle = {
-//   display: "flex",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   height: "400px",
-//   backgroundSize: "cover",
-// };
-// const spanStyle = {
-//   fontSize: "20px",
-//   background: "#efefef",
-//   color: "",
-// };
-
-// const containerStyles = {
-//   margin: "0 auto",
-// };
 
 function Home() {
-  // const [width, setWidth] = useState(0);
-  // const carousel = useRef();
+  const [DayOne , setDayOne] = React.useState(true);
+  const [DayTwo , setDayTwo] = React.useState(false);
+  const [DayThree , setDayThree] = React.useState(false);
 
-  // useEffect(() => {
-  //   console.log(carousel.current.scrollWidth, carousel.current.offsetWidth);
-  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  // }, []);
+
+  let dayone = () => {
+    setDayOne(true);
+    setDayTwo(false);
+    setDayThree(false);
+  };
+
+  let daytwo = () => {
+    setDayOne(false);
+    setDayTwo(true);
+    setDayThree(false);
+  };
+
+  
+  let daythree = () => {
+    setDayOne(false);
+    setDayTwo(false);
+    setDayThree(true);
+  };
+
+
+  
   return (
     <motion.div
       className="home"
@@ -94,9 +73,165 @@ function Home() {
     >
       <div className="topSide">
         <h1>ARUA 2023 BIENNIAL INTERNATIONAL CONFERENCE</h1>
-        <p>THEME: Reimagining the Future of Higher Education in Africa</p>
+        <p>THEME: Reimagining the future of higher education in africa</p>
         <CountdownTimer></CountdownTimer>
-        <img className="hero" src={Hero} alt=""></img>
+        <section className="programme">
+          <section className="programme_flyer">
+            <img className="hero" src={Hero} alt=""></img>
+          </section>
+          <section className="programme_days">
+            <h1>15th - 17th of November 2023</h1>
+
+            <section className="days">
+                  <section className={DayOne ? 'active' : ''} onClick={dayone}>DAY 1</section>
+                  <section className={DayTwo ? 'active' : ''} onClick={daytwo}>DAY 2</section>
+                  <section className={DayThree ? 'active' : ''} onClick={daythree}>DAY 3</section>
+            </section>
+            <section className="sessions">
+                  <section className={DayOne ? "day_1" : "day_1 visible"}>
+                      <section>Conference Opening: University of Lagos | Online</section>
+                      <section>
+                        <section className="row">
+                          <p>9:00am</p>
+                          <ul className="sub_row">
+                            <li>Introductory Remarks.</li>
+                            <li>Welcome Remarks.</li>
+                            <li>Remarks from the chair.</li>
+                          </ul>
+                        </section>
+                        <section className="row">
+                          <p>9:20am</p>
+                          <p>Opening of Conference.</p>
+                        </section>
+                        <section className="row">
+                          <p>9:30am</p>
+                          <p>First Keynote Address.</p>
+                        </section>
+                        <section className="row">
+                          <p>10:00am</p>
+                          <p>Tea/Coffee Break.</p>
+                        </section>
+                        <section className="row">
+                          <p>10:30am</p>
+                          <p>First Plenary Session.</p>
+                        </section>
+                        <section className="row">
+                          <p>12:00pm</p>
+                          <p>First Parallel Sessions || 3<sup>rd</sup> Party workshops/side events.</p>
+                        </section>
+                        <section className="row">
+                          <p>1:30pm</p>
+                          <p>Lunch.</p>
+                        </section>
+                        <section className="row">
+                          <p>2:30pm</p>
+                          <p>Second Keynote Address.</p>
+                        </section>
+                        <section className="row">
+                          <p>3:10pm</p>
+                          <p>Second Plenary Session.</p>
+                        </section>
+                        <section className="row">
+                          <p>4:30pm</p>
+                          <p>Tea/Coffee Break.</p>
+                        </section>
+                        <section className="row">
+                          <p>5:00pm</p>
+                          <p>Second Parallel Sessions || 3<sup>rd</sup> Party workshops/side events.</p>
+                        </section>
+                        <section className="row">
+                          <p>6:30pm</p>
+                          <p>Light Refreshment/Cocktails.</p>
+                        </section>
+                      </section>
+                </section>
+
+                <section className={DayTwo ? "day_2" : "day_2 visible"}>
+                      <section className="row">
+                        <p>9:00am</p>
+                        <p>Third Keynote Address.</p>
+                      </section>
+                      <section className="row">
+                        <p>9:30am</p>
+                        <p>Third Plenary Session.</p>
+                      </section>
+                      <section className="row">
+                        <p>11:00am</p>
+                        <p>Tea/Coffee Break.</p>
+                      </section>
+                      <section className="row">
+                        <p>11:30am</p>
+                        <p>Third Parallel Session || 3<sup>rd</sup> Party workshops/side events.</p>
+                      </section>
+                      <section className="row">
+                        <p>1:00pm</p>
+                        <p>Lunch.</p>
+                      </section>
+                      <section className="row">
+                        <p>2:00pm</p>
+                        <p>Fourth Keynote Address.</p>
+                      </section>
+                      <section className="row">
+                        <p>2:30pm</p>
+                        <p>Fourth Plenary Session.</p>
+                      </section>
+                      <section className="row">
+                        <p>4:00pm</p>
+                        <p>Tea/Coffee Break.</p>
+                      </section>
+                      <section className="row">
+                        <p>4:30pm</p>
+                        <p>Fourth Parallel Sessions || 3<sup>rd</sup> Party workshops/side events.</p>
+                      </section>
+                      <section className="row">
+                        <p>6:15pm</p>
+                        <p>Buses Depart for Conference Dinner.</p>
+                      </section>
+                      <section className="row">
+                        <p>7:00pm</p>
+                        <p>Conference Dinner: Dinner Speech.</p>
+                      </section>
+                </section>
+
+                <section className={DayThree ? "day_3" : "day_3 visible"}>
+                    <section>(Centre of Excellence Workshops for Early-Career Researchers)</section>
+                    <section>
+                      <section className="row">
+                        <p>9:00am</p>
+                        <p>Final Keynote Address.</p>
+                      </section>
+                      <section className="row">
+                        <p>10:00am</p>
+                        <p>Tea/Coffee Break.</p>
+                      </section>
+                      <section className="row">
+                        <p>10:30am</p>
+                        <p>7 Parallel CoE Sessions Workshops for Early-Career Researchers.</p>
+                      </section>
+                      <section className="row">
+                        <p>1:00pm</p>
+                        <p>Lunch.</p>
+                      </section>
+                      <section className="row">
+                        <p>2:00pm</p>
+                        <p>6 Parallel CoE Sessions for Early-Career Researchers.</p>
+                      </section>
+                      <section className="row">
+                        <p>5:00pm</p>
+                        <p>Policy Roundtable and Wrap-Up: Topic TBC.</p>
+                      </section>
+                      <section className="row">
+                        <p>6:30pm</p>
+                        <ul className="sub_row">
+                          <li>End of Conference and Workshop.</li>
+                          <li>Light Refreshment.</li>
+                        </ul>
+                      </section>
+                    </section>
+                </section>
+            </section>
+          </section>
+        </section>  
       </div>
       <div className="summary">
         <h1>SUMMARY</h1>
@@ -242,36 +377,6 @@ function Home() {
           </Marquee>
         </div>
       </div>
-      {/* <div className="bottomSide">
-        <div>
-          <h1>More than 13,000 teams use Saasinyo platform</h1>
-          <p>
-            Boost revenue, gain insights that help you grow and scale faster.
-          </p>
-        </div>
-        <div>
-          <h1>4.9</h1>
-          <div>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-          </div>
-          <p>Capterra</p>
-        </div>
-        <div>
-          <h1>4.8</h1>
-          <div>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-            <img src={Star} alt=""></img>
-          </div>
-          <p>Trustpilot</p>
-        </div>
-      </div> */}
     </motion.div>
   );
 }

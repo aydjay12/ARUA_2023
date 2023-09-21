@@ -5,9 +5,10 @@ import React, { useState, useEffect } from "react";
 import ExpandLessIcon from "./assets/expandless.png";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
+import NewContextProvider from "./Context/NewContext";
 
 const App = () => {
-  const [showButton, setShowButton] = useState(false);
+  const [ShowButton, setShowButton] = useState(false);
 
   // Function to scroll back to the top of the page
   const scrollToTop = () => {
@@ -20,7 +21,7 @@ const App = () => {
   // Add a scroll event listener to show/hide the button
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) {
+      if (window.scrollY > 100) {
         // Show the button when the user has scrolled down 100px
         setShowButton(true);
       } else {
@@ -37,18 +38,20 @@ const App = () => {
     };
   }, []);
   return (
-    <div className="App">
-      <Router>
-        <Navbar></Navbar>
-        <AnimatedRoutes></AnimatedRoutes>
-        <Footer></Footer>
-      </Router>
-      {showButton && (
-        <button className="back-to-top-button" onClick={scrollToTop}>
-          <img src={ExpandLessIcon} alt="Back to Top" width="40" height="40" />
-        </button>
-      )}
-    </div>
+    <NewContextProvider>
+      <div className="App">
+        <Router>
+          <Navbar></Navbar>
+          <AnimatedRoutes></AnimatedRoutes>
+          <Footer></Footer>
+        </Router>
+        {ShowButton && (
+          <button className="back-to-top-button" onClick={scrollToTop}>
+            <img src={ExpandLessIcon} alt="Back to Top" width="40" height="40" />
+          </button>
+        )}
+      </div>
+    </NewContextProvider>
   );
 };
 
