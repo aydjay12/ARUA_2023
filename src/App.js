@@ -44,7 +44,7 @@ const App = () => {
         <AnimatedRoutes></AnimatedRoutes>
         <Footer></Footer>
       </Router>
-      {showButton && (
+      {ShowButton && (
         <button className="back-to-top-button" onClick={scrollToTop}>
           <img src={ExpandLessIcon} alt="Back to Top" width="40" height="40" />
         </button>
