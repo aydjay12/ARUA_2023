@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ARUA_2023/static/css/main.cd65a42b.css",
+    "main.css": "/ARUA_2023/static/css/main.3f67b375.css",
     "main.js": "/ARUA_2023/static/js/main.842c0850.js",
     "static/js/787.fade2e9e.chunk.js": "/ARUA_2023/static/js/787.fade2e9e.chunk.js",
     "static/media/pic1.jpg": "/ARUA_2023/static/media/pic1.d8e7e9ed9b9857687a42.jpg",
@@ -32,12 +32,12 @@
     "static/media/Youtube_Icon.png": "/ARUA_2023/static/media/Youtube_Icon.7cedfa3a8bc7d3993313.png",
     "static/media/canon.png": "/ARUA_2023/static/media/canon.f6045027a7291399caae.png",
     "index.html": "/ARUA_2023/index.html",
-    "main.cd65a42b.css.map": "/ARUA_2023/static/css/main.cd65a42b.css.map",
+    "main.3f67b375.css.map": "/ARUA_2023/static/css/main.3f67b375.css.map",
     "main.842c0850.js.map": "/ARUA_2023/static/js/main.842c0850.js.map",
     "787.fade2e9e.chunk.js.map": "/ARUA_2023/static/js/787.fade2e9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd65a42b.css",
+    "static/css/main.3f67b375.css",
     "static/js/main.842c0850.js"
   ]
 }
