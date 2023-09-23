@@ -11,7 +11,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       <Routes>
-        <Route path="/arua2023" element={<Home/>}></Route>
+        <Route path="/ARUA_2023" element={<Home/>}></Route>
         <Route path="/livestream" element={<Livestream/>}></Route>
         <Route path="/breakoutsession" element={<Breakoutsession/>}></Route>
         <Route path="/livepostalcard" element={<Livepostalcard/>}></Route>

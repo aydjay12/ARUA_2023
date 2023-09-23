@@ -18,13 +18,13 @@ function Navbar() {
         <img className="logo1" src={Logo2} alt=""></img>
         <img className="logo2" src={Logo} alt=""></img>
         <div className="hiddenLinks">
-          <Link to="/arua2023"> Home </Link>
+          <Link to="/ARUA_2023"> Home </Link>
           <Link to="/livestream"> Livestream </Link>
           <Link to="/breakoutsession"> Breakout </Link>
         </div>
       </div>
       <div className="rightSide" id="right">
-        <Link to="/arua2023"> Home </Link>
+        <Link to="/ARUA_2023"> Home </Link>
         <Link to="/livestream"> Livestream </Link>
         <Link to="/breakoutsession"> Breakout Session </Link>
         <button onClick={toggleNavbar}>
