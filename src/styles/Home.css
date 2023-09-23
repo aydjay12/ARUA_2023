@@ -147,10 +147,15 @@
     text-align: center;
     font-size: 1.4em;
     margin-bottom: 2em;
+    margin: auto;
+    margin-bottom: 2em;
     margin-top: -5%;
   }
   .imagewrapper {
     margin: 0 0.64em;
+  }
+  .leaders {
+    overflow: visible;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -185,7 +190,12 @@
     width: 95%;
   }
   .leaders p {
-    margin-top: -20%;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: -10%;
   }
   .imagewrapper {
     margin: 0 0.38em;
