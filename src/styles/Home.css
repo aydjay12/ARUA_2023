@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: space-between;
   width: 83%;
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 .leaders p {
   font-size: 1.2em;
@@ -45,8 +45,11 @@
   width: 100%;
 }
 .imagewrapper {
-  margin: 0 2em;
-  width: 70%;
+  margin-right: 1.8em;
+  width: 80%;
+}
+.unilag {
+  width: 65%;
 }
 .imagewrapper img {
   width: 100%;
@@ -117,125 +120,6 @@
   background-color: black;
 }
 
-.programme
-{
-  display: flex;
-  gap: 15px;
-}
-
-.programme .programme_flyer
-{
-  width: 60%;
-}
-
-.programme .programme_days
-{
-  width: 40%;
-}
-
-.programme .programme_days h1
-{
-  font-size: 1.5em;
-  text-align: center;
-  width: 100%;
-}
-
-.programme .programme_days .days
-{
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 2em;
-}
-
-.programme .programme_days .days section
-{
-  padding: 1em;
-  border-radius: 1em;
-  background-color: blue;
-  color: white;
-  cursor: pointer;
-}
-
-.programme .programme_days .days section.active
-{
-  background: rgb(235, 235, 235);
-  color: black;
-}
-
-.programme .programme_days .day_1
-{
-  width: 100%;
-}
-
-.sessions
-{
-  position: relative;
-}
-
-.sessions .day_1, .sessions .day_2, .sessions .day_3
-{
-  position: absolute;
-  width: 100%;
-  padding: 0 2em 0 2em;
-}
-
-.sessions .day_3 section:nth-of-type(2) .row,
-.sessions .day_2 section.row,
-.sessions .day_1 section:nth-of-type(2) .row
-{
-  margin: 0.5em 0 0.5em 0;
-  display: flex;
-}
-
-.sessions .day_3 section:nth-of-type(2) .row p,
-.sessions .day_2 section.row p,
-.sessions .day_1 section:nth-of-type(2) .row p
-{
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  text-align: start;
-  align-self: flex-start;
-}
-
-.sessions .day_3 section:nth-of-type(2) .row p:nth-of-type(1),
-.sessions .day_2 section.row p:nth-of-type(1),
-.sessions .day_1 section:nth-of-type(2) .row p:nth-of-type(1)
-{
-  width: 30%;
-}
-
-.sessions .day_3 section:nth-of-type(2) .row p:nth-of-type(2),
-.sessions .day_2 section.row p:nth-of-type(2),
-.sessions .day_1 section:nth-of-type(2) .row p:nth-of-type(2)
-{
-  width: 70%;
-}
-
-.row .sub_row
-{
-  margin: 0;
-  width: 70%;
-  list-style-type: none;
-  padding: 0;
-}
-
-.sub_row li
-{
-  margin-bottom: 0.5em;
-  padding: 0;
-  width: 100%;
-}
-
-
-.visible
-{
-  display: none;
-}
-
-
-
 @media only screen and (max-width: 768px) {
   .topSide {
     width: 90%;
@@ -249,11 +133,17 @@
   #time {
     gap: 1em;
   }
-  .imagewrapper {
-    margin: 0 1em;
+  .leaders {
+    flex-direction: column;
   }
   .leaders p {
-    font-size: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    margin-top: -5%;
+  }
+  .imagewrapper {
+    margin: 0 0.64em;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -297,6 +187,6 @@
     margin-top: -20%;
   }
   .imagewrapper {
-    margin: 0 0.85em;
+    margin: 0 0.38em;
   }
 }
