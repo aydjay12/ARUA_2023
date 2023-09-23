@@ -43,6 +43,7 @@
   font-size: 1.2em;
   font-weight: bold;
   width: 100%;
+  margin-right: 3em;
 }
 .imagewrapper {
   margin-right: 1.8em;
@@ -120,6 +121,12 @@
   background-color: black;
 }
 
+@media only screen and (max-width: 1600px) {
+  .leaders {
+    overflow: hidden;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .topSide {
     width: 90%;
@@ -177,13 +184,7 @@
   .summary {
     width: 95%;
   }
-  .leaders {
-    flex-direction: column;
-  }
   .leaders p {
-    text-align: center;
-    font-size: 1.4em;
-    margin-bottom: 2em;
     margin-top: -20%;
   }
   .imagewrapper {
