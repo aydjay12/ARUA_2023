@@ -18,15 +18,15 @@ function Navbar() {
         <img className="logo1" src={Logo2} alt=""></img>
         <img className="logo2" src={Logo} alt=""></img>
         <div className="hiddenLinks">
-          <Link to="/ARUA_2023"> Home </Link>
-          <Link to="/livestream"> Livestream </Link>
-          <Link to="/breakoutsession"> Breakout </Link>
+          <Link to="/"> Home </Link>
+          <Link to="/about"> Livestream </Link>
+          <Link to="/pricing"> Breakout </Link>
         </div>
       </div>
       <div className="rightSide" id="right">
         <Link to="/ARUA_2023"> Home </Link>
         <Link to="/livestream"> Livestream </Link>
-        <Link to="/breakoutsession"> Breakout Session </Link>
+        <Link to="/breakout"> Breakout Session </Link>
         <button onClick={toggleNavbar}>
           <ReorderIcon></ReorderIcon>
         </button>

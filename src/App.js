@@ -6,9 +6,8 @@ import ExpandLessIcon from "./assets/expandless.png";
 import { BrowserRouter as Router } from "react-router-dom";
 import AnimatedRoutes from "./components/AnimatedRoutes";
 
-
 const App = () => {
-  const [ShowButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(false);
 
   // Function to scroll back to the top of the page
   const scrollToTop = () => {
@@ -21,7 +20,7 @@ const App = () => {
   // Add a scroll event listener to show/hide the button
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.pageYOffset > 100) {
         // Show the button when the user has scrolled down 100px
         setShowButton(true);
       } else {
@@ -39,7 +38,7 @@ const App = () => {
   }, []);
   return (
     <div className="App">
-      <Router>
+      <Router basename="/ARUA_2023">
         <Navbar></Navbar>
         <AnimatedRoutes></AnimatedRoutes>
         <Footer></Footer>

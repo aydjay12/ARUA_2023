@@ -1,10 +1,11 @@
 import React from "react";
+// import { MenuList } from "../helpers/MenuList";
+// import MenuItem from "../components/MenuItem";
 import "../styles/Menu.css";
 import "../styles/Breakout.css";
-import {Redirect} from '../components/Livepodcast/Redirecttolivepodcast';
 import { motion } from "framer-motion";
 
-function Breakoutsession() {
+function Menu() {
   return (
     <motion.div
       class="event_schedule"
@@ -12,7 +13,6 @@ function Breakoutsession() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <Redirect/>
       <section class="schedule_header">BREAKOUT SESSION</section>
       <section className="session1">
         <h2>Session 1</h2>
@@ -270,4 +270,4 @@ function Breakoutsession() {
   );
 }
 
-export default Breakoutsession;
+export default Menu;
