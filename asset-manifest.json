@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ARUA_2023/static/css/main.b4ff04c2.css",
-    "main.js": "/ARUA_2023/static/js/main.4a95513c.js",
+    "main.css": "/ARUA_2023/static/css/main.cd65a42b.css",
+    "main.js": "/ARUA_2023/static/js/main.842c0850.js",
     "static/js/787.fade2e9e.chunk.js": "/ARUA_2023/static/js/787.fade2e9e.chunk.js",
     "static/media/pic1.jpg": "/ARUA_2023/static/media/pic1.d8e7e9ed9b9857687a42.jpg",
     "static/media/Photo_6.jpg": "/ARUA_2023/static/media/Photo_6.80cf47ebcefe05a7a549.jpg",
@@ -15,23 +15,29 @@
     "static/media/Photo_1.jpg": "/ARUA_2023/static/media/Photo_1.76cad13d32d714a4d5ab.jpg",
     "static/media/KumbhSans-Regular.ttf": "/ARUA_2023/static/media/KumbhSans-Regular.8b92f6bc143fd8e0909f.ttf",
     "static/media/margherita.png": "/ARUA_2023/static/media/margherita.2fd7772dc411a2436332.png",
+    "static/media/support11.png": "/ARUA_2023/static/media/support11.8d08ea307e818bcc901b.png",
     "static/media/unilag_icon.png": "/ARUA_2023/static/media/unilag_icon.8d08ea307e818bcc901b.png",
     "static/media/pineapple.png": "/ARUA_2023/static/media/pineapple.4af05d7fb8b55afb892b.png",
+    "static/media/support9.png": "/ARUA_2023/static/media/support9.2584a7bb5078c6473ec0.png",
     "static/media/support2.png": "/ARUA_2023/static/media/support2.60143a5c6a8ed76ab4ee.png",
     "static/media/google.png": "/ARUA_2023/static/media/google.180de1c8312d200208c8.png",
     "static/media/amazon.png": "/ARUA_2023/static/media/amazon.fb03b0841072fd6d4cef.png",
     "static/media/logo.png": "/ARUA_2023/static/media/logo.c0aa4ee15db282ef4cac.png",
+    "static/media/support10.png": "/ARUA_2023/static/media/support10.13331de15afa60080468.png",
+    "static/media/support3.png": "/ARUA_2023/static/media/support3.d20bcc7983441e2d9a6b.png",
     "static/media/walmart.png": "/ARUA_2023/static/media/walmart.e8cb7d3306f2c7731eb0.png",
     "static/media/atlassian.png": "/ARUA_2023/static/media/atlassian.2af69a3cb255736fe8be.png",
+    "static/media/support5.png": "/ARUA_2023/static/media/support5.69bede86f0e312e8a9f7.png",
+    "static/media/support7.png": "/ARUA_2023/static/media/support7.ac4d84d645283b54d136.png",
     "static/media/Youtube_Icon.png": "/ARUA_2023/static/media/Youtube_Icon.7cedfa3a8bc7d3993313.png",
     "static/media/canon.png": "/ARUA_2023/static/media/canon.f6045027a7291399caae.png",
     "index.html": "/ARUA_2023/index.html",
-    "main.b4ff04c2.css.map": "/ARUA_2023/static/css/main.b4ff04c2.css.map",
-    "main.4a95513c.js.map": "/ARUA_2023/static/js/main.4a95513c.js.map",
+    "main.cd65a42b.css.map": "/ARUA_2023/static/css/main.cd65a42b.css.map",
+    "main.842c0850.js.map": "/ARUA_2023/static/js/main.842c0850.js.map",
     "787.fade2e9e.chunk.js.map": "/ARUA_2023/static/js/787.fade2e9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4ff04c2.css",
-    "static/js/main.4a95513c.js"
+    "static/css/main.cd65a42b.css",
+    "static/js/main.842c0850.js"
   ]
 }
