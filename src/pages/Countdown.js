@@ -18,7 +18,7 @@ function CountdownTimer() {
     const minDot = document.querySelector(".min_dot");
     const secDot = document.querySelector(".sec_dot");
 
-    const endDate = "11/19/2023 00:00:00";
+    const endDate = "11/19/2024 00:00:00";
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -114,7 +114,7 @@ function CountdownTimer() {
       </div>
 
       <h2 className="newEvent">
-        19th of November 2023
+        19th of November 2024
         <br />
         <span>Event has Begun</span>
       </h2>
